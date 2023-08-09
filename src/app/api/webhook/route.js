@@ -68,10 +68,3 @@ export async function POST(request) {
     return NextResponse.json({ err: `Internal server error: ${err.message}` }, { status: 500 });
   }
 }
-
-export const config = {
-  api: {
-    bodyParser: false,
-    externalResolver: true,
-  },
-};
