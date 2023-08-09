@@ -15,3 +15,23 @@
 - Firebase: Firebase is a platform provided by Google that offers various backend services like authentication, real-time database, cloud functions, and more.
 
 - Fakestore API: The Fakestore API is a mock API that provides dummy product data for testing and development purposes, simulating a real e-commerce API.
+
+
+### What i learnt from the project
+- **CSS**
+- grid auto flow
+- inset
+- space-x space-y
+- line-clamp
+- truncate
+
+- **JS**
+- Intl.NumberFormat
+
+- **git**
+- git remote - v
+
+- Stripe Integration
+- stripe listen --forward-to localhost:3000/api/webhook - to get the secret code for creating web hook
+- Next Auth
+- Redux Toolkit

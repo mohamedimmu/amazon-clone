@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import {
@@ -5,8 +7,16 @@ import {
   Bars3Icon,
   ShoppingCartIcon,
 } from "@heroicons/react/24/outline";
+import { signIn, signOut, useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
+import { useSelector } from "react-redux";
+import { selectItems } from "@/redux/slices/basketSlice";
 
 export default function Header() {
+  const { data: session, status } = useSession();
+  const router = useRouter();
+  const items = useSelector(selectItems);
+
   return (
     <header>
       {/* Top Nav */}
@@ -14,6 +24,7 @@ export default function Header() {
         {/* Logo */}
         <div className="mt-2 flex items-center flex-grow md:flex-grow-0">
           <Image
+            onClick={() => router.push('/')}
             src="https://links.papareact.com/f90"
             width={112}
             height={50}
@@ -34,20 +45,35 @@ export default function Header() {
 
         {/* Right */}
         <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
-          <div className="link">
-            <p>Hello Imran</p>
+          <div
+            onClick={status !== "authenticated" ? signIn : signOut}
+            className="link"
+          >
+            <p className="hover:underline">
+              {status === "loading" ? (
+                <span className="inline-block animate-spin rounded-full h-4 w-4 border-t-2 border-t-yellow-400 border-b-white mb-1.5" />
+              ) : session ? (
+                `Hello, ${session.user.name}`
+              ) : (
+                "Sign In"
+              )}
+            </p>
             <p className="font-extrabold md:text-sm">Account & Lists</p>
           </div>
 
-          <div className="link">
+          <div className="link" onClick={() => router.push('/orders')}>
             <p>Returns</p>
             <p className="font-extrabold md:text-sm">& Orders</p>
           </div>
 
-          <div className="link relative flex items-center">
-            <span className="absolute top-0 right-0 md:right-7 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold">3</span>
+          <div onClick={() => router.push('/checkout')} className="link relative flex items-center">
+            <span className="absolute top-0 right-0 md:right-7 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold">
+              {items.length}
+            </span>
             <ShoppingCartIcon className="h-10" />
-            <p className="font-extrabold md:text-sm hidden md:inline mt-2 ">Cart</p>
+            <p className="font-extrabold md:text-sm hidden md:inline mt-2 ">
+              Cart
+            </p>
           </div>
         </div>
       </div>
