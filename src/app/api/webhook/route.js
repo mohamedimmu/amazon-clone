@@ -1,17 +1,20 @@
-import { buffer } from "micro";
 import * as admin from "firebase-admin";
 import { NextResponse } from "next/server";
-import { headers } from "next/headers";
 
 // Secure a connection to firebase from backend
 const serviceAccount = require("../../../../permissions.json");
+const serviceAccountwithPrivateKey = {
+  ...serviceAccount,
+  private_key_id: process.env.PRIVATE_KEY_ID,
+  private_key: process.env.PRIVATE_KEY
+}
 
 // If there is any  Firebase Admin SDK instances already initialized  it will refer to the existing instance.
 // If there is no existing instance it will create new one.
 // This will avoid multiple instance of the SDK
 const app = !admin.apps.length
   ? admin.initializeApp({
-      credential: admin.credential.cert(serviceAccount),
+      credential: admin.credential.cert(serviceAccountwithPrivateKey),
     })
   : admin.app();
 
