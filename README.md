@@ -1,32 +1,40 @@
 # Amazon Clone
+- If you find this repository helpful or interesting, please consider giving it a star🌟. Your support is greatly appreciated.
+
+**App UI**
+![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/c0ae376e-15f2-46e9-8cf6-1674c724c43b)
+![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/69d4e867-c2c7-4959-9804-e2cf708e54ed)
+![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/66b60117-b5ac-48bc-8622-2fc727239f48)
+![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/546decb9-a49f-48f3-a8c5-1d6ea3e3a2b7)
+![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/331688d8-a3e9-4b46-8875-3acac1aa655e)
 
 ## Build Tech Stack:
 
-- Webhooks: Webhooks are a way for web applications to communicate with each other in real-time by sending HTTP requests to predefined URLs when specific events occur.
+- **Webhooks**: Webhooks are a way for web applications to communicate with each other in real time by sending HTTP requests to predefined URLs when specific events occur.
 
-- Tailwind CSS: Tailwind CSS is a utility-first CSS framework that provides a set of ready-to-use utility classes for building user interfaces quickly and efficiently.
+- **Tailwind CSS**: Tailwind CSS is a utility-first CSS framework that provides a set of ready-to-use utility classes for building user interfaces quickly and efficiently.
 
-- Next.js: Next.js is a popular React framework that enables server-side rendering, static site generation, and other advanced features to build fast and scalable web applications.
+- **Next.js**: Next.js is a popular React framework that enables server-side rendering, static site generation, and other advanced features to build fast and scalable web applications.
 
-- Next Auth: Next Auth is a library that provides out-of-the-box authentication for Next.js applications, supporting various authentication providers like Google, GitHub, etc.
+- **Next Auth**: Next Auth is a library that provides out-of-the-box authentication for Next.js applications, supporting various authentication providers like Google, GitHub, etc.
 
-- Redux: Redux is a state management library for JavaScript applications, allowing centralized storage and easy management of application state.
+- **Redux**: Redux is a state management library for JavaScript applications, allowing centralized storage and easy management of application state.
 
-- Firebase: Firebase is a platform provided by Google that offers various backend services like authentication, real-time database, cloud functions, and more.
+- **Firebase**: Firebase is a platform provided by Google that offers various backend services like authentication, real-time database, cloud functions, and more.
 
-- Fakestore API: The Fakestore API is a mock API that provides dummy product data for testing and development purposes, simulating a real e-commerce API.
+- **Fakestore API**: The Fakestore API is a mock API that provides dummy product data for testing and development purposes, simulating a real e-commerce API.
 
 
-### What i learnt from the project
-- **CSS**
+### What i learned from the project
+## CSS ##
 - grid auto flow
 - inset
-- space-x space-y
+- space-x space-y in tailwind
 - line-clamp
 - truncate
 
-- **JS**
-- Intl.NumberFormat
+## JS ##
+- Intl.NumberFormat - provides a way to format numbers based on the locale (language and region) of the user.
 
 - **git**
 - git remote - v 
@@ -68,7 +76,7 @@ const result = await stripe.redirectToCheckout({
 ```javascript
 const stripe = new Stripe(STRIPE_SECRET_KEY);
 ```
-3.Create a Stripe checkout session using the stripe.checkout.sessions.create method.
+3. Create a Stripe checkout session using the stripe.checkout.sessions.create method.
 
 ```javascript
 const session = await stripe.checkout.sessions.create({
