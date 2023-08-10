@@ -14,7 +14,7 @@ const serviceAccountwithPrivateKey = {
 // This will avoid multiple instance of the SDK
 const app = !admin.apps.length
   ? admin.initializeApp({
-      credential: admin.credential.cert(JSON.stringify(serviceAccountwithPrivateKey)),
+      credential: admin.credential.cert(serviceAccountwithPrivateKey),
     })
   : admin.app();
 
