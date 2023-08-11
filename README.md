@@ -2,7 +2,6 @@
 - If you find this repository helpful or interesting, please consider giving it a star🌟. Your support is greatly appreciated.
 
 **App UI**
-
 ![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/c0ae376e-15f2-46e9-8cf6-1674c724c43b)
 ![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/69d4e867-c2c7-4959-9804-e2cf708e54ed)
 ![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/66b60117-b5ac-48bc-8622-2fc727239f48)
