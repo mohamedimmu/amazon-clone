@@ -2,11 +2,11 @@
 - If you find this repository helpful or interesting, please consider giving it a star🌟. Your support is greatly appreciated.
 
 **App UI**
-![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/c0ae376e-15f2-46e9-8cf6-1674c724c43b)
-![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/69d4e867-c2c7-4959-9804-e2cf708e54ed)
-![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/66b60117-b5ac-48bc-8622-2fc727239f48)
-![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/546decb9-a49f-48f3-a8c5-1d6ea3e3a2b7)
-![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/331688d8-a3e9-4b46-8875-3acac1aa655e)
+![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/ad2a574a-7ed2-4c31-9ab3-5621bc0e68e7)
+![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/432aedc8-2f8a-4ad0-81c7-8faa54307e1e)
+![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/1235cfc1-18e5-4ae9-bf0a-571e9e57b1c0)
+![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/0b65ce8c-f603-4c90-98d2-2eb051b0594c)
+![image](https://github.com/mohamedimmu/amazon-clone/assets/54463675/fde37c2e-6f9d-4311-b561-ffd615c2980e)
 
 ## Build Tech Stack:
 
