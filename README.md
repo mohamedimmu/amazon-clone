@@ -36,7 +36,7 @@
 ## JS ##
 - Intl.NumberFormat - provides a way to format numbers based on the locale (language and region) of the user.
 
-- **git**
+## git ##
 - git remote - v 
   - To display information about the remote repositories associated with your local repository
 
